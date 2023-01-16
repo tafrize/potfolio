@@ -1,0 +1,32 @@
+.projets{
+    position: relative;
+    height:150vh;
+    width: auto;
+    padding: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(254, 254, 254);
+    
+}
+
+.projets_section{
+    
+        position: absolute;
+        left: 40px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content:space-evenly;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 25px;
+        
+        
+    }
+
+    .projets>h2{
+        position: relative;
+        text-align: center;
+        bottom:100px; 
+              
+    }

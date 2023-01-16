@@ -1,0 +1,45 @@
+.home{
+    display: flex;
+    background-image: url('https://static.vecteezy.com/ti/vecteur-libre/p1/523309-developpement-web-et-concept-de-codage-de-programmation-optimisation-seo-conception-web-moderne-sur-ecran-d-39-ordinateur-portable-vecteur-vectoriel.jpg');
+   
+    width:100%;
+    padding:370px;
+    background-repeat:no-repeat;
+    background-size: 100%;
+    display:inherit;
+    margin:0;
+    height: 120vh;
+    
+}
+.home>h5,h1{
+   
+    position: relative;
+    color: white;
+    bottom: 50px;
+    left:450px;
+}
+.home>p{
+    
+    position: relative;
+    color: white;
+    bottom: 50px;
+    left:450px;
+    
+}
+
+.home>button{
+    animation: wiggle 2s linear infinite;
+    background-color:coral ;
+    position: relative;
+    color: white;
+    bottom: 50px;
+    left:450px;
+    padding: 100 px;
+    width: 100px;
+    border-radius: 10px;
+    border-color: aliceblue;
+    align-items:center;
+    text-transform: inherit;
+    transition: 0.5s;
+}
+

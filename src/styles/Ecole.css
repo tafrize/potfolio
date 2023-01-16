@@ -1,0 +1,44 @@
+.ecole{
+
+    position: relative;
+    top:0;
+    object-fit: contain;
+    margin-right: 150px;
+    
+   
+}
+
+/*
+.ecole_info{
+    position: relative;
+    left: 10px;
+    top:2px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}*/
+
+.ecole>img{
+    margin-bottom: 20px;
+    text-transform: inherit;
+    border-radius: 10px;
+    box-shadow: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 20px 6px 18x -9px rgba(0,0,0,0.75);
+    transition: transform 100ms ease-in;
+    transform: scale(1.07);
+    width: 350px;
+    height: 250px;
+   
+    
+}
+.ecole>img:hover{
+    transform: scale(1.2);
+}
+.ecole>h4{
+    display: inline;
+    font-size:19px;
+
+}

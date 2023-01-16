@@ -1,0 +1,23 @@
+.about{
+    padding: 80px;
+    height: 50vh;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 2px solid gainsboro;
+    background-image: linear-gradient( to left,rgb(163, 6, 242),rgb(15, 1, 21));
+   
+   /* background-image: linear-gradient( to bottom,#9796F0,#a18cd1,#fbc2eb);*/
+}
+.about>h2{
+
+    color:white;
+    text-align:center;
+
+}
+.about>p{
+    color:white;
+    text-align:center;
+    font-size: 20px;
+    
+}

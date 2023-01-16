@@ -1,0 +1,32 @@
+.contact{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    padding: 290px;
+    background-color: rgb(244, 244, 244);
+    
+}
+.title_contact>h2{
+    position:relative;
+    text-align: center;
+    width: 300px;
+    bottom: 230px;
+    justify-content: initial;
+}
+
+.formulaire{
+    
+    width: 500px;
+    height:400px;
+    bottom: 30px;
+    position: absolute;
+    bottom: 40px;    border:  1px solid lightgrey;
+    border-radius: 5px;
+    padding: 20px;
+}
+.formulaire>button{
+    color: black;
+    background-color: blueviolet;
+}
