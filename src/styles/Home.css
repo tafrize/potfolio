@@ -41,4 +41,67 @@
     text-transform: inherit;
     transition: 0.5s;
 }
+@media screen and (max-width:740px) {
+
+    .home{
+        display: flex;
+        background: url('https://static.vecteezy.com/ti/vecteur-libre/p1/523309-developpement-web-et-concept-de-codage-de-programmation-optimisation-seo-conception-web-moderne-sur-ecran-d-39-ordinateur-portable-vecteur-vectoriel.jpg') center center;
+        width:80vw;
+        padding:270px;
+        background-repeat:no-repeat;
+        background-size: 100%;
+        display:inherit;
+        margin:0;
+        height: 10vh;
+        bottom: 120vh;
+       
+    }
+    .home>h1{
+   
+        position: absolute;
+        
+        color: white;
+        bottom: 520px;
+        font-size: small;
+        left:250px;
+    }
+    .home>h5{
+    
+        position: absolute;
+        
+        color: white;
+        bottom: 480px;
+        font-size: small;
+        left:250px;
+        
+    }
+    .home>p{
+    
+        position: absolute;
+       
+        color: white;
+        bottom: 420px;
+        font-size: small;
+        left:250px;
+        
+    }
+    .home>button{
+        animation: wiggle 2s linear infinite;
+        background-color:coral ;
+        position: absolute;
+        color: white;
+        bottom: 380px;
+        left:250px;
+        padding: 180 px;
+        width: 80px;
+        border-radius: 10px;
+        border-color: aliceblue;
+        align-items:center;
+        text-transform: inherit;
+        transition: 0.5s;
+        display: flex;
+
+    }
+    
+}
 

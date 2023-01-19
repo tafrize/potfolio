@@ -20,8 +20,7 @@
         margin-left: auto;
         margin-right: auto;
         padding: 25px;
-        
-        
+                
     }
 
     .projets>h2{
@@ -31,9 +30,10 @@
               
     }
     @media screen and (max-width:740px) {
+
         .projets{
             position: relative;
-            height:410vh;
+            height:350vh;
             width: auto;
             padding: 190px;
             margin-left: auto;
@@ -44,7 +44,7 @@
         .projets_section{
     
             position: absolute;
-            left: 40px;
+            left: 10%;
             display: grid;
             grid-template-columns: 1fr;
             justify-content:space-evenly;
@@ -52,8 +52,6 @@
             margin-left: auto;
             margin-right: auto;
             padding: 25px;
-            
-            
         }
         
     }

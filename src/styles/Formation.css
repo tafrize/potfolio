@@ -29,20 +29,22 @@
     @media screen and (max-width:740px){
 
         .formation>h2{
-            position: relative;
+            flex-direction: column-reverse;
             text-align: center;
             bottom:310px;    
             justify-content: center;
-            left: 10;    
+            left: -150px;   
+           
         }
         .formation{
-            bottom: 50px;
+            bottom: 10px;
             position: relative;
-            height:180vh;
+            height:150vh;
             padding: 250px;
             margin-left: auto;
             margin-right: auto;
             margin: 50px;
+            flex-direction: column;
             background-color: rgb(254, 254, 254);
             
         }
@@ -50,7 +52,7 @@
         .formation_section{
     
             position: absolute;
-            left: 0;
+            left: 10%;
             text-align: center;
             margin-left: 20px;
             bottom: 0px;
