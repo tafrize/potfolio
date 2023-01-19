@@ -11,7 +11,39 @@
     width: auto;
     grid-template-columns: repeat(4,1fr);
     justify-content:space-evenly;
+    height: auto;
         /*background-image: linear-gradient( to bottom,#9796F0,#a18cd1,#fbc2eb);*/
+}
+@media screen and (max-width:740px) {
+
+    .skills{
+        height: 210vh;
+        background-color: rgb(250, 250, 250);
+        padding: 70px;
+    
+    }
+    .skills>h2{
+        
+        left: 0;
+       
+        text-align: center;
+        width: 300px;
+         
+    }
+
+    .skills_img{
+        height: 5px;
+        justify-items: auto;
+        padding: 10px;
+        display: grid;
+        width: auto;
+        grid-template-columns: repeat(2,1fr);
+        justify-content:space-evenly;
+        max-width: 90%;
+        
+            /*background-image: linear-gradient( to bottom,#9796F0,#a18cd1,#fbc2eb);*/
+    }
+    
 }
 .skills_img>img{
     position: relative;
