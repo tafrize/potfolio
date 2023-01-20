@@ -13,7 +13,7 @@ function Footer() {
       <p>tous droits reservés</p>
 
       
-<a target="_blank" href="https://github.com/tafrize">
+<a target="_blank" href="https://github.com/tafrize" rel="noopener noreferrer">
    <img
        src={github}
        alt="Linkedin"
@@ -22,7 +22,7 @@ function Footer() {
     />
  </a>
 
- <a target="_blank" href="https://www.linkedin.com/in/tafrize-anli-said-7229081aa/">
+ <a target="_blank" href="https://www.linkedin.com/in/tafrize-anli-said-7229081aa/" rel="noopener noreferrer">
    <img
        src={linkedin}
        alt="Linkedin"

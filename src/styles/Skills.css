@@ -14,7 +14,7 @@
     height: auto;
         /*background-image: linear-gradient( to bottom,#9796F0,#a18cd1,#fbc2eb);*/
 }
-@media screen and (max-width:740px) {
+@media screen and (max-width:940px) {
 
     .skills{
         height: 210vh;
