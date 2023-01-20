@@ -46,7 +46,7 @@
     .home{
         display: flex;
         background: url('https://static.vecteezy.com/ti/vecteur-libre/p1/523309-developpement-web-et-concept-de-codage-de-programmation-optimisation-seo-conception-web-moderne-sur-ecran-d-39-ordinateur-portable-vecteur-vectoriel.jpg') center center;
-        width:80vw;
+        width:100vw;
         padding:270px;
         background-repeat:no-repeat;
         background-size: 100%;
@@ -54,7 +54,6 @@
         margin:0;
         height: 10vh;
         bottom: 120vh;
-       
     }
     .home>h1{
    
@@ -63,7 +62,7 @@
         color: white;
         bottom: 520px;
         font-size: small;
-        left:250px;
+        left:350px;
     }
     .home>h5{
     
@@ -72,17 +71,19 @@
         color: white;
         bottom: 480px;
         font-size: small;
-        left:250px;
+        left:350px;
         
     }
     .home>p{
     
         position: absolute;
-       
+        display: flex;
         color: white;
         bottom: 420px;
         font-size: small;
         left:250px;
+        left:350px;
+        
         
     }
     .home>button{
@@ -91,7 +92,7 @@
         position: absolute;
         color: white;
         bottom: 380px;
-        left:250px;
+        left:350px;
         padding: 180 px;
         width: 80px;
         border-radius: 10px;
@@ -104,4 +105,133 @@
     }
     
 }
+    @media screen and (max-width: 480px) {
+
+        .home{
+            display:flex;
+            background: url('https://static.vecteezy.com/ti/vecteur-libre/p1/523309-developpement-web-et-concept-de-codage-de-programmation-optimisation-seo-conception-web-moderne-sur-ecran-d-39-ordinateur-portable-vecteur-vectoriel.jpg') center center;
+            width: 100%;
+            padding:270px;
+            background-repeat:no-repeat;
+            background-size: 100%;
+            display:inherit;
+            margin:0;
+            height: 5vh;
+            bottom: 180vh;
+            
+           
+        }
+
+        .home>h1{
+   
+            position: absolute;
+            color: white;
+            bottom: 450px;
+            font-size: small;
+            left:180px;
+        }
+        .home>h5{
+    
+            position: absolute;
+            display: inherit;
+            color: white;
+            bottom: 420px;
+            font-size: small;
+            left:180px;
+            
+        }
+        .home>p{
+    
+            position: absolute;
+            width: 220px;
+            color: white;
+            bottom: 350px;
+            font-size: small;
+            left:180px;
+            
+        }
+        .home>button{
+           
+            background-color:coral ;
+            position: absolute;
+            color: white;
+            bottom: 320px;
+            left:180px;
+            padding: 150 px;
+            width: 90px;
+            border-radius: 10px;
+            border-color: aliceblue;
+            align-items:center;
+            text-transform: inherit;
+            transition: 0.5s;
+            display: flex;
+    
+        }
+
+    }  
+
+    @media screen and (max-width: 640px) {
+
+        .home{
+            display:flex;
+            background: url('https://static.vecteezy.com/ti/vecteur-libre/p1/523309-developpement-web-et-concept-de-codage-de-programmation-optimisation-seo-conception-web-moderne-sur-ecran-d-39-ordinateur-portable-vecteur-vectoriel.jpg') center center;
+            width: 100%;
+            padding:270px;
+            background-repeat:no-repeat;
+            background-size: 100%;
+            display:inherit;
+            margin:0;
+            height: 5vh;
+            bottom: 180vh;
+            
+           
+        }
+
+        .home>h1{
+   
+            position: absolute;
+            color: white;
+            bottom: 450px;
+            font-size: small;
+            left:100px;
+        }
+        .home>h5{
+    
+            position: absolute;
+            display: inherit;
+            color: white;
+            bottom: 410px;
+            font-size: small;
+            left:100px;
+            
+        }
+        .home>p{
+    
+            position: absolute;
+            width: 220px;
+            color: white;
+            bottom: 350px;
+            font-size: small;
+            left:100px;
+            
+        }
+        .home>button{
+           
+            background-color:coral ;
+            position: absolute;
+            color: white;
+            bottom: 320px;
+            left:100px;
+            padding: 150 px;
+            width: 90px;
+            border-radius: 10px;
+            border-color: aliceblue;
+            align-items:center;
+            text-transform: inherit;
+            transition: 0.5s;
+            display: flex;
+    
+        }
+
+    }  
 

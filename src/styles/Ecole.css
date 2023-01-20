@@ -8,6 +8,16 @@
     
 }
 
+@media screen and (max-width: 480px) {
+    .ecole>img{
+       
+        height:230px ;
+        width:200px ;
+        padding: 32px;
+        
+    }
+}
+
 /*
 .ecole_info{
     position: relative;

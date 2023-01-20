@@ -36,3 +36,24 @@
     }
     
 }
+@media screen and (max-width:480px) {
+
+    .about{
+        width: 100%;
+        padding: 30px;
+        height: 35vh;
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+        box-shadow: 2px solid gainsboro;
+        background-image: linear-gradient( to left,rgb(163, 6, 242),rgb(15, 1, 21));
+       
+       /* background-image: linear-gradient( to bottom,#9796F0,#a18cd1,#fbc2eb);*/
+    }
+
+    .about>p{
+        flex-direction: column;
+        font-size: small;
+    }
+    
+}

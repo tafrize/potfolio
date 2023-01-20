@@ -30,10 +30,18 @@
               
     }
     @media screen and (max-width:940px) {
+        .projets>h2{
+            position: relative;
+            text-align: center;
+            bottom:100px; 
+            width: 150px;
+            left: 60px;
+                  
+        }
 
         .projets{
             position: relative;
-            height:350vh;
+            height:340vh;
             width: auto;
             padding: 190px;
             margin-left: auto;
@@ -44,7 +52,46 @@
         .projets_section{
     
             position: absolute;
-            left: 10%;
+            left: 20%;
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content:space-evenly;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 25px;
+            bottom: 30px;
+        }
+        
+       
+    }
+
+    @media screen and (max-width: 640px) {
+
+        .projets>h2{
+            position: relative;
+            text-align: center;
+            bottom:120px; 
+            width: 150px;
+            left: -50px;
+                  
+        }
+
+        .projets {
+
+            position: relative;
+            height:310vh;
+            width: auto;
+            padding: 190px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(254, 254, 254);
+            
+        }
+        .projets_section{
+    
+            position: absolute;
+            left: 1px;
             display: grid;
             grid-template-columns: 1fr;
             justify-content:space-evenly;
@@ -53,5 +100,46 @@
             margin-right: auto;
             padding: 25px;
         }
+            
+   
+        }  
+        @media screen and (max-width: 480px) {
+
+            .projets>h2{
+                position: relative;
+                text-align: center;
+                bottom:120px; 
+                width: 150px;
+                left: -50px;
+                      
+            }
+    
+            .projets {
+    
+                position: relative;
+                height:310vh;
+                width:  100%;;
+                padding: 190px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: rgb(254, 254, 254);
+                
+            }
+            .projets_section{
         
-    }
+                position: absolute;
+                left: 0rem;
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-content:space-evenly;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 25px;
+            }
+                
+       
+            }  
+    
+            
+        

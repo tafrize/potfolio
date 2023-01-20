@@ -46,3 +46,12 @@
     font-weight: 25px;
     font-family:'Segoe UI';
 }
+@media screen and (max-width: 480px) {
+    .challenge>img{
+        margin: 30px;
+        height:230px ;
+        width:300px ;
+        
+    }
+
+}
