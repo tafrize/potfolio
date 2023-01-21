@@ -5,7 +5,7 @@ function About() {
   return (
     <div  id="about" className="about ">
         <h2>About me</h2>
-        <p>Hello, Bienvenue dans mon site internet.</p>
+        <p>Hello, welcome to my portfolio website.</p>
         <p>I'm a software engineering student passionate about software
            creation and new technologies.
            My favorite hobby is programming new solutions 

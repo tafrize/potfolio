@@ -41,9 +41,9 @@ function Skills (){
         <img src={Mongo} alt=""/>
         <img src={Mysql} alt=""/>
         <img src={Java} alt=""/>
-        <img src={Node} alt=""/>
+        <img src={Node} alt="" style={{padding:"30px",margin:"auto"}}/>
         <img src={Php} alt=""/>
-        <img src={C} alt=""/>
+        <img src={C} alt="" style={{padding:"30px",margin:"auto"}}/>
         <img src={Boot} alt=""/>
         <img src={JavaScript} alt=""/>
         <img src={Wordpress} alt=""/>

@@ -19,6 +19,8 @@
         text-align: center;
         margin-left: 20px;
         bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .formation>h2{
@@ -99,7 +101,7 @@
     @media screen and (max-width:640px) {
         .formation{
             
-            height: 148vh;
+            height: 145vh;
             width: 100%;
         }
         .formation>h2{
@@ -131,7 +133,8 @@
             margin-left: auto;
             margin-right: auto;
             padding: 25px;
-            bottom: 30px;
+            bottom: -50px;
+            
         
         }
 

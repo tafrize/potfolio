@@ -1,13 +1,13 @@
 .home{
     display: flex;
-    background: url('https://static.vecteezy.com/ti/vecteur-libre/p1/523309-developpement-web-et-concept-de-codage-de-programmation-optimisation-seo-conception-web-moderne-sur-ecran-d-39-ordinateur-portable-vecteur-vectoriel.jpg') center center;
+    background: url('https://www.padok.fr/hubfs/Images/Blog/tech_vs_manager.webp') center center;
     width:100%;
     padding:370px;
     background-repeat:no-repeat;
     background-size: 100%;
     display:inherit;
-    margin:0;
-    height: 120vh;
+    margin:10;
+    height: 100vh;
     
 }
 .home>h5,h1{
@@ -173,16 +173,16 @@
     @media screen and (max-width: 640px) {
 
         .home{
+            
             display:flex;
             background: url('https://static.vecteezy.com/ti/vecteur-libre/p1/523309-developpement-web-et-concept-de-codage-de-programmation-optimisation-seo-conception-web-moderne-sur-ecran-d-39-ordinateur-portable-vecteur-vectoriel.jpg') center center;
             width: 100%;
-            padding:270px;
+            padding:200px;
             background-repeat:no-repeat;
             background-size: 100%;
             display:inherit;
             margin:0;
-            height: 5vh;
-            bottom: 180vh;
+            height:50vh;
             
            
         }
@@ -191,18 +191,18 @@
    
             position: absolute;
             color: white;
-            bottom: 450px;
+            bottom: 510px;
             font-size: small;
-            left:100px;
+            left:190px;
         }
         .home>h5{
     
             position: absolute;
             display: inherit;
             color: white;
-            bottom: 410px;
+            bottom: 485px;
             font-size: small;
-            left:100px;
+            left:190px;
             
         }
         .home>p{
@@ -210,9 +210,9 @@
             position: absolute;
             width: 220px;
             color: white;
-            bottom: 350px;
+            bottom: 430px;
             font-size: small;
-            left:100px;
+            left:190px;
             
         }
         .home>button{
@@ -220,8 +220,8 @@
             background-color:coral ;
             position: absolute;
             color: white;
-            bottom: 320px;
-            left:100px;
+            bottom: 400px;
+            left:225px;
             padding: 150 px;
             width: 90px;
             border-radius: 10px;

@@ -23,11 +23,11 @@ function Home() {
 
 
         
-    <h1>Software Engineering Student</h1>  
-    <h5>Hello, my name is ANLI SAID Tafrize</h5>
+    <h1>SOFTWARE STUDENT</h1>  
+    <h5>Hello,i'm ANLI SAID Tafrize</h5>
        
     <p>
-      Download my resume and visit my website for more details.
+      Download my resume for more details.
      
     </p>
 

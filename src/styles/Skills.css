@@ -18,20 +18,23 @@
     height: auto;
         /*background-image: linear-gradient( to bottom,#9796F0,#a18cd1,#fbc2eb);*/
 }
-@media screen and (max-width:940px) {
+    @media screen and (max-width:940px) {
 
     .skills{
         height: 180vh;
         background-color: rgb(250, 250, 250);
         padding: 70px;
         width: 100%;
-    
     }
     .skills>h2{
+        
+        
         position: relative;
-        left: -300rem!important;
-        height: 50px;
-        bottom: 30px;
+        padding: 10px;
+        width: 100%;
+        margin-right: 125px;
+        bottom: 50px;
+        left: -335px;
     }
 
     .skills_img{
@@ -50,17 +53,22 @@
     
 }
 
-@media screen and (max-width:480px) {
-    .skills{
-        height: 180vh;
+    @media screen and (max-width:640px) {
+        .skills{
+            height: 180vh;
+            width: 100%;
     }
 
     .skills>h2{
          
-    position: relative;
-    left: 50px;
-    height: 50px;
-
+        position: relative;
+        padding: 10px;
+        margin-right: 125px;
+        bottom: 50px;
+        left: -400px;
+        width: 100%;
+        
+    
          
     }
 
