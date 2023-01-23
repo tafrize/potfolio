@@ -5,8 +5,7 @@
 
 }
 .skills>h2{
-    display: flex;
-    left: 150px;
+    display: relative;
 }
 .skills_img{
     justify-items: auto;
@@ -46,7 +45,7 @@
         grid-template-columns: repeat(2,1fr);
         justify-content:space-evenly;
         max-width: 90%;
-       
+        
         
             /*background-image: linear-gradient( to bottom,#9796F0,#a18cd1,#fbc2eb);*/
     }
@@ -62,27 +61,24 @@
     .skills>h2{
          
         position: relative;
-        padding: 10px;
+        padding:10px;
         margin-right: 125px;
         bottom: 50px;
-        left: -400px;
-        width: 100%;
-        
-    
-         
+        left: -460px;
     }
 
     .skills_img>img{
-        left: 0;
+        margin-right: 10px!important;
         height: 1px;
-        padding: 15px;
+        margin: 0;
+        padding: 20px;
         display: grid;
         width:1%;
         grid-template-columns: repeat(2,1fr);
+        column-gap:5%;
         justify-content:space-evenly;
         bottom: 0;
-        
-        
+        grid-template-rows: 100px;
             /*background-image: linear-gradient( to bottom,#9796F0,#a18cd1,#fbc2eb);*/
     }
 

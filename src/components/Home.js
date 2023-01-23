@@ -23,11 +23,11 @@ function Home() {
 
 
         
-    <h1>SOFTWARE STUDENT</h1>  
-    <h5>Hello,i'm ANLI SAID Tafrize</h5>
+    <h1>INGENIEUR INFORMATIQUE</h1>  
+    <h5>Je suis ANLI SAID Tafrize</h5>
        
     <p>
-      Download my resume for more details.
+      Télecharger mon CV pour plus de détails. 
      
     </p>
 
@@ -36,11 +36,6 @@ function Home() {
             mon cv
         </Button>
    
-      
-     
-
-
-
     </div>
   );
 }
