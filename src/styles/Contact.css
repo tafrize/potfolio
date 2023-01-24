@@ -1,4 +1,11 @@
 .contact{
+    padding-top: 4rem;
+    background-color: rgb(244, 244, 244);
+    padding-bottom: 2rem;
+    
+}
+
+/*.contact{
     position: relative;
     display: flex;
     justify-content: center;
@@ -9,11 +16,9 @@
     
 }
 .title_contact>h2{
-    position:relative;
-    text-align: center;
-    width: 300px;
+    
     bottom: 230px;
-    justify-content: initial;
+    
 }
 
 .formulaire{ 
@@ -120,3 +125,4 @@
     background-color: blueviolet;
 
 }
+*/

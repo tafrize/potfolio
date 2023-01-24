@@ -16,9 +16,11 @@ import Boot from '../assets/bootstrap.png';
 import Wordpress from '../assets/wordpress1.png';
 import Angular from '../assets/angular.png';
 import Firebase from '../assets/firebase.png';
-
-
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import "../styles/Skills.css";
+
 function Skills (){
   return (
 
@@ -27,31 +29,71 @@ function Skills (){
     
 
     <div id='skills' className='skills'>
-      <h2>Compétences</h2>
 
-      <div  className='skills_img'>
+      <Container>
+
+      <h2 class="text-center  mb-15" style={{paddingBottom:"6rem"}}>Compétences</h2> 
+
+      <Row>
+
        
-
+      <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1 imag d-flex flex-column align-items-center g-3'>
         <img src={HTML} alt=""/>
+        </Col>
+        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
         <img src={CSS} alt="" />
+        </Col>
+        <Col lg={3} md={4} sm={6} xs={6}className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
+
         <img src={Angular} alt=""/>
+        </Col>
+        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
         <img src={ReactImg} alt=""/>
+        </Col>
+        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
         <img src={Kotlin} alt=""/>
+        </Col>
+        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
         <img src={Python} alt=""/>
+        </Col>
+        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
         <img src={Mongo} alt=""/>
+        </Col>
+        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
         <img src={Mysql} alt=""/>
+        </Col>
+        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
         <img src={Java} alt=""/>
-        <img src={Node} alt="" style={{padding:"30px",margin:"auto"}}/>
+        </Col>
+        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
+        <img src={Node} alt="" />
+        </Col>
+        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
         <img src={Php} alt=""/>
-        <img src={C} alt="" style={{padding:"30px",margin:"auto"}}/>
+        </Col>
+        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag  d-flex flex-column align-items-center g-3'>
+        <img src={C} alt="" />
+        </Col>
+        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
         <img src={Boot} alt=""/>
+        </Col>
+        <Col lg={3} md={4} sm={6}xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
         <img src={JavaScript} alt=""/>
+        </Col>
+        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
         <img src={Wordpress} alt=""/>
+        </Col>
+        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
         <img src={Firebase} alt=""/>
+      </Col>
+        
         
       
-      </div>
+      </Row>
+
+      </Container>
     </div>
+
 
     
   );

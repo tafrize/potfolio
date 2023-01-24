@@ -3,11 +3,12 @@
     position: relative;
     top:0;
     object-fit: contain;
-    margin-right: 150px;
-    transition: transform 100ms ease-in;
+    margin-right: auto;
+    margin-left: auto;
+    
     
 }
-
+/*
 @media screen and (max-width: 480px) {
     .ecole>img{
        
@@ -18,7 +19,7 @@
     }
 }
 
-/*
+
 .ecole_info{
     position: relative;
     left: 10px;
@@ -41,13 +42,18 @@
     transform: scale(1.07);
     width: 350px;
     height: 250px;
+     
 }
 
 .ecole>img:hover{
     transform: scale(1.2);
 }
 .ecole>h4{
-    display: inline;
+    text-transform: inherit;
+    text-align:left;
     font-size:19px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
 
 }

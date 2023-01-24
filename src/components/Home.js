@@ -1,5 +1,10 @@
 import '../styles/Home.css';
 import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
+
 
 
 function Home() {
@@ -21,20 +26,35 @@ function Home() {
   return (
     <div id="home" className="home">
 
+      <Container fluid className='p-4 background-radial-gradient overflow-hidden'>
+
+       <Row>
+
+       <Col md='12' className='text-center text-md-start d-flex flex-column justify-content-center'>
+
+       <div id="radius-shape-1" className="position-absolute rounded-circle shadow-5-strong"></div>
+        
 
         
-    <h1>INGENIEUR INFORMATIQUE</h1>  
-    <h5>Je suis ANLI SAID Tafrize</h5>
+       <h1 className="my-5 display-3 fw-bold ls-tight px-3 text-center" style={{color: 'hsl(218, 81%, 95%)'}}>
+            Ingénieure informatique<br />
+            <span style={{color: 'hsl(218, 81%, 75%)'}}>ANLI SAID Tafrize</span>
+       </h1>
        
-    <p>
-      Télecharger mon CV pour plus de détails. 
-     
+    <p  className='px-3 text-center' style={{color: 'hsl(218, 81%, 85%)'}}>
+       Visiter mon site portfolio et télecharger mon CV pour plus de détails. 
     </p>
 
     
-    <Button  variant="primary" type="submit" onClick={onButtonClick}>
+    <Button className="mx-2 px-5" size='lg' variant="primary" type="submit" onClick={onButtonClick} style={{backgroundColor:" #ad1fff"}}>
             mon cv
         </Button>
+
+    </Col>   
+
+    </Row> 
+
+    </Container>  
    
     </div>
   );

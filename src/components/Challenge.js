@@ -12,7 +12,7 @@ function Challenge({src,nom,description}){
             <img src={src} alt=""/>
             
             <h3>{nom}</h3>
-            <h5>{description}</h5>
+            
             
 
             

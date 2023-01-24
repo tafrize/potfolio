@@ -1,5 +1,5 @@
 import '../styles/App.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../components/Header';
 import Home from '../components/Home';
 import Formation from '../components/Formation';

@@ -3,7 +3,7 @@
     position: relative;
     top:0;
     object-fit: contain;
-    margin-right: 150px;
+   
 
 }
 
@@ -19,14 +19,13 @@
 }*/
 
 .challenge>img{
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     padding: 10px;
     text-transform: inherit;
     border-radius: 20px;
     cursor: pointer;
     overflow: hidden;
-    transition: transform 100ms ease-in;
     transform: scale(1.07);
     width: 350px;
     height: 250px;
@@ -42,16 +41,8 @@
 
 .challenge>h3{
     margin-top: 10px;
-    font-size: 20px;
-    font-weight: 25px;
+    font-size: 15px;
     font-family:'Segoe UI';
-}
-@media screen and (max-width: 480px) {
-    .challenge>img{
-        margin: 30px;
-        height:230px ;
-        width:300px ;
-        
-    }
-
+    width: 100%;
+    text-align:center;
 }

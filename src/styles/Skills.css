@@ -1,4 +1,10 @@
 .skills{
+    margin-top: 2rem;
+    padding-top: 4rem;
+    background-color: rgb(250, 250, 250);
+   
+}
+/*.skills{
     height: 120vh;
     background-color: rgb(250, 250, 250);
     padding: 70px;
@@ -15,8 +21,9 @@
     grid-template-columns: repeat(4,1fr);
     justify-content:space-evenly;
     height: auto;
-        /*background-image: linear-gradient( to bottom,#9796F0,#a18cd1,#fbc2eb);*/
-}
+        background-image: linear-gradient( to bottom,#9796F0,#a18cd1,#fbc2eb);
+}*/
+/*
     @media screen and (max-width:940px) {
 
     .skills{
@@ -47,7 +54,7 @@
         max-width: 90%;
         
         
-            /*background-image: linear-gradient( to bottom,#9796F0,#a18cd1,#fbc2eb);*/
+            background-image: linear-gradient( to bottom,#9796F0,#a18cd1,#fbc2eb);
     }
     
 }
@@ -67,7 +74,7 @@
         left: -460px;
     }
 
-    .skills_img>img{
+    .row>img{
         margin-right: 10px!important;
         height: 1px;
         margin: 0;
@@ -79,29 +86,22 @@
         justify-content:space-evenly;
         bottom: 0;
         grid-template-rows: 100px;
-            /*background-image: linear-gradient( to bottom,#9796F0,#a18cd1,#fbc2eb);*/
+            background-image: linear-gradient( to bottom,#9796F0,#a18cd1,#fbc2eb);
     }
 
 }
+*/
 
-.skills_img>img{
+.imag >img{
+    display: flex;
     position: relative;
-    left: 40px;
-    display: inline-flex;
+    left:0;
     width: 250px;
     height: 100px;
     object-fit: contain;
-    margin-bottom: 40px; 
-    animation:infinite;
-    
-    
+    margin-bottom: 40px;    
 }
+
 .skills_img>img:hover{
     transform: scale(1.2);
-}
-.skills>h2{
-    margin-left: 520px;
-    text-align: center;
-    width: 300px;
-    justify-content: initial;  
 }
