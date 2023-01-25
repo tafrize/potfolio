@@ -7,20 +7,23 @@ import Col from 'react-bootstrap/Col'
 
 function About() {
   return (
-    <div  id="about" className="about ">
+    <div  id="about" className="">
 
-      <Container fluid>
+      
+
+      <Container fluid className='p-3 pt-1 about overflow-hidden'>
+
+      <h2 className='text-center mb-15 text-white mt-3' style={{paddingBottom:"1rem",paddingTop:'2rem'}}>À propos de moi</h2>
 
         <Row>
 
           <Col lg={12} md={12} sm={12} className='text-center justify-content-center' style={{color:"white"}}> 
 
-            <h2 style={{paddingBottom:"1rem"}}>About me</h2>
-            <p>Hello, welcome to my portfolio website.</p>
-            <p> I'm a software engineering student passionate about software
-              creation and new technologies. <br></br>
-              My favorite hobby is programming new solutions 
-              using different programming languages.
+            
+            <p>Bonjour, bienvenue dans mon site portfolio.</p>
+            <p>Je suis une étudiante en génie informatique passionnée par la création informatique et les nouvelles technologies. <br></br>
+              Mon passe temps favori est de programmer des nouvelles solutions 
+              en utilisant différents languages de programmation.
               
             </p>
           </Col>

@@ -102,6 +102,6 @@
     margin-bottom: 40px;    
 }
 
-.skills_img>img:hover{
+.imag>img:hover{
     transform: scale(1.2);
 }

@@ -1,6 +1,5 @@
 .background-radial-gradient {
     margin-top: 5rem;
-    padding-top: 20%;
     height: 50%;
     background-color: hsl(218, 41%, 15%);
     background-image: radial-gradient(650px circle at 0% 0%,

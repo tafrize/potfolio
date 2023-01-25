@@ -36,7 +36,7 @@ function Home() {
         
 
         
-       <h1 className="my-5 display-3 fw-bold ls-tight px-3 text-center" style={{color: 'hsl(218, 81%, 95%)'}}>
+       <h1 className="my-5 display-3 fw-bold ls-tight px-3 text-center" style={{color: 'hsl(218, 81%, 95%)', paddingTop:"50px"}}>
             Ingénieure informatique<br />
             <span style={{color: 'hsl(218, 81%, 75%)'}}>ANLI SAID Tafrize</span>
        </h1>

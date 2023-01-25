@@ -45,12 +45,12 @@ function Header() {
                     </li>
                     <li className='nav-item'>
                     <Link  onClick={closeMenu} to='about' offset={-60} spy={true} smooth={true} duration={500} style={{textDecoration:'none',color:"#ffffff"}}>
-                         About 
+                              A propos 
                     </Link>
                     </li>
                     <li className='nav-item'>
                     <Link  onClick={closeMenu} to='contact' offset={-100} spy={true} smooth={true} duration={500} style={{textDecoration:'none',color:"#ffffff"}}>
-                         Contact 
+                         Contact
                     </Link>
                     </li>
                 </ul>

@@ -38,7 +38,7 @@ function Skills (){
 
        
       <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1 imag d-flex flex-column align-items-center g-3'>
-        <img src={HTML} alt=""/>
+        <img src={HTML} alt="html"/>
         </Col>
         <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
         <img src={CSS} alt="" />
