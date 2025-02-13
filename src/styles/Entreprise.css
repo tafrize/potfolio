@@ -1,0 +1,86 @@
+.entreprise{
+    position: relative;
+    top:0;
+    background: linear-gradient(185deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /*border-radius: 20px;*/
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.17);
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+    overflow: hidden;
+    transform: scale(1.07);
+    width: 350px;
+    height: 200px;
+    background-color: white;
+}
+
+.discover{
+    text-decoration: none;
+}
+
+.details{
+    padding: 20px;
+    margin: auto !important;
+    justify-content: center;
+    color: black;
+}
+
+.details>h4{
+    display: inline-block;
+    padding: 5px;
+    border-bottom: 4px solid hsl(218, 81%, 75%) ; /* #f8b400 */
+    text-transform: inherit;
+    text-align:left;
+    font-size:20px;
+    margin-left: auto;
+    width: 80%;
+}
+
+.details>h6{
+    color: #3d3b3b;   
+    font-size: 15px; 
+    font-weight: 300px;
+    text-transform: inherit;
+    text-align:left;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.details>a{
+}
+
+
+.skills {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+.skill-icon {
+    width: 40px; 
+    height: 40px;
+    object-fit: contain;
+}
+    
+.btn-lire {
+    display: inline-block;
+    background-color: #c82333;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn-lire:hover {
+    background-color: #a71d2a;
+}
+
+

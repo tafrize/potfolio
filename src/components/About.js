@@ -1,38 +1,33 @@
 import '../styles/About.css';
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-
-
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
+import AboutImage from '../assets/about.png'; 
+import ground from '../assets/ground3.png'; 
 
 function About() {
   return (
-    <div  id="about" className="">
-
-      
-
+    <div id="about" className="about-section">
       <Container fluid className='p-3 pt-1 about overflow-hidden'>
-
-      <h2 className='text-center mb-15 text-white mt-3' style={{paddingBottom:"1rem",paddingTop:'2rem'}}>À propos de moi</h2>
-
-        <Row>
-
-          <Col lg={12} md={12} sm={12} className='text-center justify-content-center' style={{color:"white"}}> 
-
-            
-            <p>Bonjour, bienvenue dans mon site portfolio.</p>
-            <p>Je suis une étudiante en génie informatique passionnée par la création informatique et les nouvelles technologies. <br></br>
-              Mon passe temps favori est de programmer des nouvelles solutions 
-              en utilisant différents languages de programmation.
-              
+        <h2 className='text-center text-black mt-3 title-about'>À propos de moi</h2>
+        <Row className="align-items-center ligne">
+          <Col lg={6} md={12} className="text-center ">
+            <Image src={ground} alt="À propos de moi" fluid className="about-img" />
+          </Col>
+          <Col lg={6} md={12} className="text-black text-content">
+            <p>
+            Jeune ingénieure spécialisée en informatique, 
+            j’ai eu l’opportunité de renforcer mes compétences sur des projets à forte envergure.
+            Grâce à ces expériences, j’ai pu développer une expertise approfondie et affiner mes capacités d’adaptation face à des défis complexes.
+            Je suis curieuse, responsable, avec un esprit collaboratif, et je stimule activement mes connaissances. 
+            Mon approche proactive me permet d’explorer en permanence de nouvelles technologies et 
+            d’innover dans les solutions que je propose.
             </p>
           </Col>
-
-
-        </Row> 
-
+        </Row>
+   
       </Container>
-      
     </div>
   );
 }

@@ -1,4 +1,6 @@
-.challenge{
+.challenge>img{
+    width: 350px;
+}/*.challenge{
 
     position: relative;
     top:0;
@@ -7,7 +9,6 @@
 
 }
 
-/*
 .ecole_info{
     position: relative;
     left: 10px;
@@ -16,7 +17,7 @@
     margin-right: auto;
     
 
-}*/
+}
 
 .challenge>img{
     margin-top: 20px;
@@ -45,4 +46,4 @@
     font-family:'Segoe UI';
     width: 100%;
     text-align:center;
-}
+}*/

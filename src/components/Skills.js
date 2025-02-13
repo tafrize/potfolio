@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { Container, Carousel, Row, Col } from 'react-bootstrap';
+import '../styles/Skills.css';
 import HTML from '../assets/html.png';
 import CSS from '../assets/css.png';
 import JavaScript from '../assets/javascript.png';
@@ -16,87 +17,55 @@ import Boot from '../assets/bootstrap.png';
 import Wordpress from '../assets/wordpress1.png';
 import Angular from '../assets/angular.png';
 import Firebase from '../assets/firebase.png';
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import "../styles/Skills.css";
 
-function Skills (){
-  return (
+const skills = [
+  { src: HTML, nom: "HTML" },
+  { src: CSS, nom: "CSS" },
+  { src: JavaScript, nom: "JavaScript" },
+  { src: ReactImg, nom: "React" },
+  { src: Node, nom: "Node.js" },
+  { src: Python, nom: "Python" },
+  { src: Java, nom: "Java" },
+  { src: Php, nom: "PHP" },
+  { src: Mysql, nom: "MySQL" },
+  { src: Mongo, nom: "MongoDB" },
+  { src: Kotlin, nom: "Kotlin" },
+  { src: C, nom: "C" },
+  { src: Boot, nom: "Bootstrap" },
+  { src: Wordpress, nom: "WordPress" },
+  { src: Angular, nom: "Angular" },
+  { src: Firebase, nom: "Firebase" }
+];
 
-    
-    
-    
-
-    <div id='skills' className='skills'>
-
-      <Container>
-
-      <h2 class="text-center  mb-15" style={{paddingBottom:"6rem"}}>Compétences</h2> 
-
-      <Row>
-
-       
-      <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1 imag d-flex flex-column align-items-center g-3'>
-        <img src={HTML} alt="html"/>
-        </Col>
-        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
-        <img src={CSS} alt="" />
-        </Col>
-        <Col lg={3} md={4} sm={6} xs={6}className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
-
-        <img src={Angular} alt=""/>
-        </Col>
-        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
-        <img src={ReactImg} alt=""/>
-        </Col>
-        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
-        <img src={Kotlin} alt=""/>
-        </Col>
-        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
-        <img src={Python} alt=""/>
-        </Col>
-        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
-        <img src={Mongo} alt=""/>
-        </Col>
-        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
-        <img src={Mysql} alt=""/>
-        </Col>
-        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
-        <img src={Java} alt=""/>
-        </Col>
-        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
-        <img src={Node} alt="" />
-        </Col>
-        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
-        <img src={Php} alt=""/>
-        </Col>
-        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag  d-flex flex-column align-items-center g-3'>
-        <img src={C} alt="" />
-        </Col>
-        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
-        <img src={Boot} alt=""/>
-        </Col>
-        <Col lg={3} md={4} sm={6}xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
-        <img src={JavaScript} alt=""/>
-        </Col>
-        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
-        <img src={Wordpress} alt=""/>
-        </Col>
-        <Col lg={3} md={4} sm={6} xs={6} className='order-3 order-lg-1  imag d-flex flex-column align-items-center g-3'>
-        <img src={Firebase} alt=""/>
-      </Col>
-        
-        
-      
-      </Row>
-
-      </Container>
-    </div>
-
-
-    
+const chunkArray = (arr, size) => {
+  return arr.reduce((acc, _, i) => 
+    (i % size ? acc[acc.length - 1].push(arr[i]) : acc.push([arr[i]]), acc), []
   );
 };
+
+const skillChunks = chunkArray(skills, 4); // Groupes de 4
+
+function Skills() {
+  return (
+    <div id="skills" className="bg-light skills">
+      <Container>
+        <Carousel interval={3000} pause="hover">
+          {skillChunks.map((group, index) => (
+            <Carousel.Item key={index}>
+              <Row className="justify-content-center">
+                {group.map((skill, idx) => (
+                  <Col key={idx} lg={3} md={4} sm={6} xs={6} className="d-flex flex-column align-items-center g-3">
+                    <img src={skill.src} alt={skill.nom} className="skills-image" />
+                   
+                  </Col>
+                ))}
+              </Row>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </Container>
+    </div>
+  );
+}
 
 export default Skills;

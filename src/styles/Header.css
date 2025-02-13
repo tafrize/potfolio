@@ -1,13 +1,14 @@
 .header {
-    position: fixed;
+    position: absolute;
     height: 90px;
     width: 100%;
     top: 0;
-    left: 0;
+    margin: auto;
+    right: 0 !important;
     z-index: 1;
     transition: .3s ease-in;
     overflow: hidden;
-    background-color: rgba(0,0,0,.9);
+    background-color: transparent hsl(218, 41%, 15%); 
 }
 
 .header .navbar {
@@ -20,36 +21,49 @@
     padding: 0 1rem;
 }
 
-.header .nav-menu a {
-    color: white;
-}
-
-.header .navbar img {
-    width: 250px;
-    height: auto;
-}
-
 .header .nav-menu {
     display: flex;
+    flex-grow: 1;
+    justify-content: flex-end; 
 }
 
 .header .nav-item {
     padding: 1rem;
     font-weight: 500;
 }
-.nav-item .active{
+
+.header .nav-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item .active {
     padding-bottom: 12px;
-    border-bottom: 3px solid rgb(130, 9, 183);
+    border-bottom: 3px solid hsl(218, 81%, 75%);
+}
+.header .nav-item:first-child  {
+    color: inherit; 
+    border-bottom: none; 
 }
 
 .header .nav-item a:hover {
     padding-bottom: 12px;
-    border-bottom: 3px solid rgb(130, 9, 183);
+    border-bottom: 3px solid hsl(218, 81%, 75%);
+}
+
+.header .nav-item:first-child a:hover {
+    color: inherit; 
+    border-bottom: none;  
 }
 
 .hamburger {
     display: none;
 }
+
+.navbar .nav-item:first-child {
+    margin-right: auto; /* Cela force "Tafrize." à rester à gauche */
+}
+
 
 
 @media screen and (max-width:940px) {

@@ -23,29 +23,39 @@ function Header() {
 
         <ul className={nav ? "nav-menu active" : "nav-menu" } style={{listStyleType: "none"}}>
                     <li className='nav-item'>
+                    <Link  onClick={closeMenu}  to='#' offset={-100} spy={true} smooth={true} duration={500} style={{textDecoration:'none',color:"#ffffff", fontSize:""}}>
+                         Tafrize.
+                    </Link>
+                    </li>
+                    <li className='nav-item'>
                     <Link  onClick={closeMenu}  to='home' offset={-100} spy={true} smooth={true} duration={500} style={{textDecoration:'none',color:"#ffffff"}}>
                          Accueil 
                     </Link>
                     </li>
+                    {/*
                     <li className='nav-item'>
-                    <Link  onClick={closeMenu} to='formations' offset={-100} spy={true} smooth={true} duration={500} style={{textDecoration:'none',color:"#ffffff"}} >
-                         Formations 
-                    </Link>
-                   
-                    </li>
-                    <li className='nav-item'>
-                    <Link  onClick={closeMenu} to='skills' offset={-100} spy={true} smooth={true} duration={500} style={{textDecoration:'none',color:"#ffffff"}}>
-                         Compétences 
-                    </Link>
-                    </li>
+                         <Link  onClick={closeMenu} to='formations' offset={-100} spy={true} smooth={true} duration={500} style={{textDecoration:'none',color:"#ffffff"}} >
+                              Formations 
+                         </Link>
+                    </li>*/}
                     <li className='nav-item'>
                     <Link  onClick={closeMenu} to='projets'offset={-100} spy={true} smooth={true} duration={500} style={{textDecoration:'none',color:"#ffffff"}}>
-                         Projets 
+                         Portfolio
+                    </Link>
+                    </li>
+                    <li className='nav-item'>
+                    <Link  onClick={closeMenu} to='profil' offset={-100} spy={true} smooth={true} duration={500} style={{textDecoration:'none',color:"#ffffff"}} >
+                         Compétences
+                    </Link>
+                    </li>
+                    <li className='nav-item'>
+                    <Link  onClick={closeMenu} to='experiences' offset={-100} spy={true} smooth={true} duration={500} style={{textDecoration:'none',color:"#ffffff"}}>
+                         Expériences 
                     </Link>
                     </li>
                     <li className='nav-item'>
                     <Link  onClick={closeMenu} to='about' offset={-60} spy={true} smooth={true} duration={500} style={{textDecoration:'none',color:"#ffffff"}}>
-                              A propos 
+                         A propos 
                     </Link>
                     </li>
                     <li className='nav-item'>

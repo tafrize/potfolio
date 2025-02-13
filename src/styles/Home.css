@@ -1,278 +1,53 @@
 .background-radial-gradient {
-    margin-top: 5rem;
-    height: 50%;
+    position: relative;
     background-color: hsl(218, 41%, 15%);
-    background-image: radial-gradient(650px circle at 0% 0%,
-        hsl(218, 41%, 35%) 15%,
-        hsl(218, 41%, 30%) 35%,
-        hsl(218, 41%, 20%) 75%,
-        hsl(218, 41%, 19%) 80%,
-        transparent 100%),
-      radial-gradient(1250px circle at 100% 100%,
-        hsl(218, 41%, 45%) 15%,
-        hsl(218, 41%, 30%) 35%,
-        hsl(218, 41%, 20%) 75%,
-        hsl(218, 41%, 19%) 80%,
-        transparent 100%);
-  }
-  
-  #radius-shape-1 {
-    height: 220px;
-    width: 220px;
-    top: -60px;
-    left: -130px;
-    background: radial-gradient(#44006b, #ad1fff);
-    overflow: hidden;
-  }
-  
-  #radius-shape-2 {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), 
+        url(../assets/home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    min-height: 550px;
+}
+
+#radius-shape-2 {
     border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    position: absolute;
     bottom: -60px;
     right: -110px;
     width: 300px;
     height: 300px;
     background: radial-gradient(#44006b, #ad1fff);
     overflow: hidden;
-  }
-  
-  .bg-glass {
-    background-color: hsla(0, 0%, 100%, 0.9) !important;
+}
+
+.bg-glass {
+    background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: saturate(200%) blur(25px);
-  }
-/*.home{
-    display: flex;
-    background: url('https://static.vecteezy.com/ti/vecteur-libre/p1/523309-developpement-web-et-concept-de-codage-de-programmation-optimisation-seo-conception-web-moderne-sur-ecran-d-39-ordinateur-portable-vecteur-vectoriel.jpg') center center;
-    width:100%;
-    padding:370px;
-    background-repeat:no-repeat;
-    background-size: 100%;
-    display:inherit;
-    margin:10;
-    height: 100vh;
-    
-}
-.home>h5,h1{
-   
-    position: relative;
-    color: white;
-    bottom: 50px;
-    left:450px;
-}
-.home>p{
-    
-    position: relative;
-    color: white;
-    bottom: 50px;
-    left:450px;
-    
 }
 
-.home>button{
-    animation: wiggle 2s linear infinite;
-    background-color:coral ;
-    position: relative;
-    color: white;
-    bottom: 50px;
-    left:450px;
-    padding: 100 px;
-    width: 100px;
-    border-radius: 10px;
-    border-color: aliceblue;
-    align-items:center;
-    text-transform: inherit;
-    transition: 0.5s;
+.custom-button {
+    display: inline-block !important;
+    padding: 10px 20px !important;
+    border: 2px solid #fff !important;
+    border-radius: 5px !important;
+    background-color: transparent !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    transition: background-color 0.3s ease !important;
 }
-@media screen and (max-width:940px) {
 
-    .home{
-        display: flex;
-        background: url('https://static.vecteezy.com/ti/vecteur-libre/p1/523309-developpement-web-et-concept-de-codage-de-programmation-optimisation-seo-conception-web-moderne-sur-ecran-d-39-ordinateur-portable-vecteur-vectoriel.jpg') center center;
-        width:100vw;
-        padding:270px;
-        background-repeat:no-repeat;
-        background-size: 100%;
-        display:inherit;
-        margin:0;
-        height: 10vh;
-        bottom: 120vh;
+@media (min-width: 1200px) {
+    .background-radial-gradient {
+        min-height: 80vh;
     }
-    .home>h1{
-   
-        position: absolute;
-        
-        color: white;
-        bottom: 520px;
-        font-size: small;
-        left:350px;
-    }
-    .home>h5{
-    
-        position: absolute;
-        
-        color: white;
-        bottom: 480px;
-        font-size: small;
-        left:350px;
-        
-    }
-    .home>p{
-    
-        position: absolute;
-        display: flex;
-        color: white;
-        bottom: 420px;
-        font-size: small;
-        left:250px;
-        left:350px;
-        
-        
-    }
-    .home>button{
-        animation: wiggle 2s linear infinite;
-        background-color:coral ;
-        position: absolute;
-        color: white;
-        bottom: 380px;
-        left:350px;
-        padding: 180 px;
-        width: 80px;
-        border-radius: 10px;
-        border-color: aliceblue;
-        align-items:center;
-        text-transform: inherit;
-        transition: 0.5s;
-        display: flex;
-
-    }
-    
 }
-    @media screen and (max-width: 480px) {
 
-        .home{
-            display:flex;
-            background: url('https://static.vecteezy.com/ti/vecteur-libre/p1/523309-developpement-web-et-concept-de-codage-de-programmation-optimisation-seo-conception-web-moderne-sur-ecran-d-39-ordinateur-portable-vecteur-vectoriel.jpg') center center;
-            width: 100%;
-            padding:270px;
-            background-repeat:no-repeat;
-            background-size: 100%;
-            display:inherit;
-            margin:0;
-            height: 5vh;
-            bottom: 180vh;
-            
-           
-        }
-
-        .home>h1{
-   
-            position: absolute;
-            color: white;
-            bottom: 450px;
-            font-size: small;
-            left:180px;
-        }
-        .home>h5{
-    
-            position: absolute;
-            display: inherit;
-            color: white;
-            bottom: 420px;
-            font-size: small;
-            left:180px;
-            
-        }
-        .home>p{
-    
-            position: absolute;
-            width: 220px;
-            color: white;
-            bottom: 350px;
-            font-size: small;
-            left:180px;
-            
-        }
-        .home>button{
-           
-            background-color:coral ;
-            position: absolute;
-            color: white;
-            bottom: 320px;
-            left:180px;
-            padding: 150 px;
-            width: 90px;
-            border-radius: 10px;
-            border-color: aliceblue;
-            align-items:center;
-            text-transform: inherit;
-            transition: 0.5s;
-            display: flex;
-    
-        }
-
-    }  
-
-    @media screen and (max-width: 640px) {
-
-        .home{
-            
-            display:flex;
-            background: url('https://static.vecteezy.com/ti/vecteur-libre/p1/523309-developpement-web-et-concept-de-codage-de-programmation-optimisation-seo-conception-web-moderne-sur-ecran-d-39-ordinateur-portable-vecteur-vectoriel.jpg') center center;
-            width: 100%;
-            padding:200px;
-            background-repeat:no-repeat;
-            background-size: 100%;
-            display:inherit;
-            margin:0;
-            height:50vh;
-            
-           
-        }
-
-        .home>h1{
-   
-            position: absolute;
-            color: white;
-            bottom: 510px;
-            font-size: small;
-            left:190px;
-        }
-        .home>h5{
-    
-            position: absolute;
-            display: inherit;
-            color: white;
-            bottom: 485px;
-            font-size: small;
-            left:190px;
-            
-        }
-        .home>p{
-    
-            position: absolute;
-            width: 220px;
-            color: white;
-            bottom: 430px;
-            font-size: small;
-            left:190px;
-            
-        }
-        .home>button{
-           
-            background-color:coral ;
-            position: absolute;
-            color: white;
-            bottom: 400px;
-            left:225px;
-            padding: 150 px;
-            width: 90px;
-            border-radius: 10px;
-            border-color: aliceblue;
-            align-items:center;
-            text-transform: inherit;
-            transition: 0.5s;
-            display: flex;
-    
-        }
-
-    }  
-*/
+/* Pour les tablettes et petits écrans (moins de 992px) */
+@media (max-width: 992px) {
+    .background-radial-gradient {
+        min-height: 450px;
+    }
+}

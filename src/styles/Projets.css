@@ -1,152 +1,86 @@
-.projets{
-    margin-top: 2rem;
-    padding-top: 4rem;
-   
-}
-
-
-/*.projets{
+/* 🌟 Structure de la grille Masonry */
+.masonry-grid {
+    column-count: 3; /* 3 colonnes sur desktop */
+    column-gap: 15px;
+  }
+  
+  .masonry-item {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .masonry-item figure {
     position: relative;
-    height:150vh;
-    width: auto;
-    padding: 190px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(254, 254, 254);
-    
-}
-
-.projets_section{
-    
-        position: absolute;
-        left: 40px;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        justify-content:space-evenly;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 25px;
-                
+    overflow: hidden;
+    background: white;
+    break-inside: avoid;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 🌟 Effet de survol des images */
+  .project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-card img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .project-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+    background: linear-gradient(123deg, rgba(0, 0, 0, 0.9), rgba(248, 180, 0, 0.973));
+    color: white;
+    display: flex;  /* 🔥 Pour centrer le texte */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .project-card:hover .project-info {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* 🌟 Style du lien */
+  .project-link {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .project-link:hover {
+    color: #fff;
+  }
+  
+  /* 🌟 Responsive : Adaptation aux écrans plus petits */
+  @media (max-width: 992px) {
+    .masonry-grid {
+      column-count: 2; /* 2 colonnes sur tablettes */
     }
-
-    .projets>h2{
-        position: relative;
-        text-align: center;
-        bottom:100px; 
-              
+  }
+  
+  @media (max-width: 576px) {
+    .masonry-grid {
+      column-count: 1; /* 1 colonne sur mobile */
     }
-    @media screen and (max-width:940px) {
-        .projets>h2{
-            position: relative;
-            text-align: center;
-            bottom:100px; 
-            width: 150px;
-            left: 60px;
-                  
-        }
-
-        .projets{
-            position: relative;
-            height:340vh;
-            width: auto;
-            padding: 190px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: rgb(254, 254, 254);
-            
-        }
-        .projets_section{
-    
-            position: absolute;
-            left: 20%;
-            display: grid;
-            grid-template-columns: 1fr;
-            justify-content:space-evenly;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 25px;
-            bottom: 30px;
-        }
-        
-       
-    }
-
-    @media screen and (max-width: 640px) {
-
-        .projets>h2{
-            position: relative;
-            text-align: center;
-            bottom:120px; 
-            width: 150px;
-            left: -50px;
-                  
-        }
-
-        .projets {
-
-            position: relative;
-            height:310vh;
-            width: auto;
-            padding: 190px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: rgb(254, 254, 254);
-            
-        }
-        .projets_section{
-    
-            position: absolute;
-            left: 1px;
-            display: grid;
-            grid-template-columns: 1fr;
-            justify-content:space-evenly;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 25px;
-        }
-            
-   
-        }  
-        @media screen and (max-width: 480px) {
-
-            .projets>h2{
-                position: relative;
-                text-align: center;
-                bottom:120px; 
-                width: 150px;
-                left: -50px;
-                      
-            }
-    
-            .projets {
-    
-                position: relative;
-                height:310vh;
-                width:  100%;;
-                padding: 190px;
-                margin-left: auto;
-                margin-right: auto;
-                background-color: rgb(254, 254, 254);
-                
-            }
-            .projets_section{
-        
-                position: absolute;
-                left: 0rem;
-                display: grid;
-                grid-template-columns: 1fr;
-                justify-content:space-evenly;
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-                padding: 25px;
-            }
-                
-       
-            }  
-*/
-            
-        
+  }
+  
