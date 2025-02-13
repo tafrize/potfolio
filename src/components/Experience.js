@@ -66,7 +66,7 @@ const experiences = [
   {
     nom: "Lead Developper",
     logo:["carrefour"],
-    description: "Responsable de la gestion d'équipe, des résultats et de la satisfaction client.",
+    description: "Responsable d'équipe, des résultats et de la satisfaction client.",
     entreprise: "Freelance, Remote",
     lien: "https://eilco.univ-littoral.fr/",
     skills: ["Angular", "Java", "Spring"],
