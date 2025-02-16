@@ -30,26 +30,26 @@ function Contact() {
     handleSuccess();
   }
   return (
-    <div id="contact" className="contact">
-      <Container fluid>
-        <Card className="text-black m-lg-5 m-sm-3" style={{ borderRadius: '30px', paddingBottom: '3rem' }}>
-          <h2 className="text-center h2 fw-bold mb-3 mx-1 mx-md-4 mt-4 w-100" style={{ paddingBottom: '2rem', paddingTop: '3rem' }}>
+    <div id="contact" >
+      <Container fluid className="contact">
+        <Card className="text-black m-lg-5 m-sm-3 card-contact mx-auto" style={{ borderRadius: '30px', padding: '2rem' }}>
+          <h2 className="text-center h2 fw-bold mb-3 mx-1 mx-md-4 mt-4 w-100 contact-title" >
             Me contacter
           </h2>
           <Row style={{ margin: "0 auto" }} className="d-flex justify-content-center gx-0 w-100">
             <Col md="10" lg="6" className="order-2 order-lg-1 d-flex flex-column align-items-center justify-content-center">
               <Form ref={formu} onSubmit={handleSubmit} className="formulaire mx-auto">
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                  <Form.Label>Name</Form.Label>
-                  <Form.Control type="text" size="lg" placeholder="votre nom" name="user_name" />
+                  <Form.Label>Nom <span style={{ color: 'red' }}>*</span></Form.Label>
+                  <Form.Control type="text" size="lg" placeholder="votre nom" name="user_name" required />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                  <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" size="lg" className="p-sm-2" placeholder="votre adresse email" name="user_email" />
+                  <Form.Label>Email <span style={{ color: 'red' }}>*</span></Form.Label>
+                  <Form.Control type="email" size="lg" className="p-sm-2" placeholder="votre adresse email" name="user_email"required />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                  <Form.Label>Message</Form.Label>
-                  <Form.Control as="textarea" rows={4} size="lg" placeholder="message..." name="message" />
+                  <Form.Label>Message <span style={{ color: 'red' }}>*</span></Form.Label>
+                  <Form.Control as="textarea" rows={4} size="lg" placeholder="message..." name="message" required />
                 </Form.Group>
                 <Button className="mb-4 submit" size="lg" variant="primary" type="submit" style={{ backgroundColor: 'black' }}>
                   Envoyer
@@ -58,7 +58,7 @@ function Contact() {
             </Col>
             <Col md="10" lg="6" className="order-1 order-lg-2 d-flex align-items-center flex-column">
               <Image className="" src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp" fluid />
-              <div className="contact-info mt-4 text-center">
+              <div className="contact-info text-center">
                 <Row className="d-flex justify-content-center align-items-center">
                   <Col xs="auto" className="d-flex align-items-center">
                     <FaEnvelope size={24} style={{ marginRight: '10px' }} />

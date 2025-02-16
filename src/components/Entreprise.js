@@ -16,7 +16,6 @@ function Entreprise({ nom, logo, description, entreprise, taches }) {
         <image src={logo} alt={nom}/>
         <h6>{description}</h6>
         <h6 style={{ fontSize: '14px', fontStyle: 'italic', color: '#333' }}>{entreprise}</h6>
-        
         <a onClick={handleShow} className="discover">
           Découvrir <ArrowRight size={18} />
         </a>

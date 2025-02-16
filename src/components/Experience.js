@@ -38,8 +38,8 @@ const experiences = [
       "Choisir les différents technologies",
       "Réalisation du cahier des charges",
       "Conception UML",
-      "Travaillle en équipe avec la méthode Agile",
-      "Migration et traitement des données ititialement sur Excel avec du Python",
+      "Travaill en équipe avec la méthode Agile",
+      "Migration et traitement des données initialement sur Excel avec du Python",
       "Développer un système temps réel avec Java.",
       "Conception et développement d'interfaces utilisateur dynamiques.",
       "Mise en place d'APIs sécurisées avec Node.js et Express.",
@@ -56,7 +56,7 @@ const experiences = [
     skills: ["PHP", "JavaScript", "HTML", "CSS"],
     taches: [
       "Développement de sites web en HTML, CSS et JavaScript.",
-      "Intégration et personnalisation de CMS comme WordPress.",
+      "Intégration et personnalisation de l'interface administrateur.",
       "Correction de bugs et amélioration du référencement SEO.",
       "Utilisation du cycle en V",
       "Gestion des emprunts et les différents restrictions utilisateurs",
@@ -66,15 +66,15 @@ const experiences = [
   {
     nom: "Lead Developper",
     logo:["carrefour"],
-    description: "Responsable d'équipe, des résultats et de la satisfaction client.",
+    description: "Responsable d'équipe, du projet et de la satisfaction client.",
     entreprise: "Freelance, Remote",
     lien: "https://eilco.univ-littoral.fr/",
     skills: ["Angular", "Java", "Spring"],
     taches: [
       "Gestion et animation d'une équipe de 3 développeurs.",
-      "Réaliser le chahier des charges et les spécifications clients.",
+      "Réaliser le cahier des charges et les spécifications clients.",
       "Architecture et développement d'applications en Angular et Spring Boot.",
-      "Gestion des des différents workflows",
+      "Gestion des différents workflows",
       "Mise en place des pipelins CI/CD",
       "Affiner les besoins clients",
       "Gestion et correction des bugs",
@@ -84,7 +84,7 @@ const experiences = [
   {
     nom: "Caissière Polyvalente",
     description: "Gestion du service client et de la caisse d'enregistrement.",
-    entreprise: "Carrefour City, Calais",
+    entreprise: "Carrefour, Calais",
     lien: "https://www.carrefour.fr/",
     skills: ["Gestion caisse", "Service client"],
     taches: [
@@ -108,7 +108,7 @@ const experiences = [
   {
     nom: "Employée Polyvalente",
     description: "Travail en équipe au sein d'un fast-food dynamique.",
-    entreprise: "MacDo, Calais",
+    entreprise: "Macdo, Calais",
     lien: "https://www.mcdonalds.fr/",
     skills: ["Service rapide", "Gestion client"],
     taches: [
@@ -135,7 +135,6 @@ function Experience() {
                 entreprise={exp.entreprise} 
                 skills={exp.skills} 
                 taches={exp.taches} 
-
               />
             </Col>
           ))}

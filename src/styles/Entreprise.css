@@ -7,14 +7,17 @@
     /*border-radius: 20px;*/
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.17);
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
     cursor: pointer;
     overflow: hidden;
     transform: scale(1.07);
     width: 350px;
     height: 200px;
     background-color: white;
+    align-items: center;
+    margin: auto;
+    
+
 }
 
 .discover{
@@ -84,3 +87,32 @@
 }
 
 
+@media (max-width: 768px) {
+    .entreprise {
+      width: 90%;
+      max-width: 300px;
+      height: auto; 
+      padding: 15px; 
+      transform: scale(1); 
+    }
+  
+    .details > h4 {
+      font-size: 18px; 
+      width: 100%; 
+    }
+  
+    .details > h6 {
+      font-size: 14px;
+    }
+  
+    .skill-icon {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .btn-lire {
+      font-size: 12px; 
+      padding: 6px 12px;
+    }
+  }
+  

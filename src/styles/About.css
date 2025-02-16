@@ -1,30 +1,24 @@
 .about-section {
     padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 4%;
+    padding-right: 4%;
     background: white;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 4rem;
-    padding-left: 4%;
-    padding-right: 4%;
 }
 
-.text-content >p{
+.text-content > p {
     padding: 20px;
     font-size: 1.1rem;
     line-height: 1.8;
     text-align: justify;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 85%; 
+    width: 85%;
+    margin: 0 auto;
 }
-
 
 h2.text-center {
     font-size: 2rem;
@@ -32,10 +26,11 @@ h2.text-center {
     text-align: center;
 }
 
-.ligne{
+.ligne {
     margin-bottom: 40px;
 }
-.title-about{
+
+.title-about {
     margin-bottom: 70px;
 }
 
@@ -48,15 +43,28 @@ h2.text-center {
     margin: auto;
 }
 
-/* Responsive */
+/* Styles pour les écrans de taille moyenne et petite */
 @media (max-width: 768px) {
     .about-img {
         width: 90%;
         max-width: 250px;
     }
 
-    .text-content {
-        text-align: center;
-        max-width: 100%;
+    .text-content > p {
+        font-size: 1rem;
+        width: 100%;
+        padding: 15px;
+    }
+
+    h2.text-center {
+        font-size: 1.8rem;
+    }
+
+    .ligne {
+        margin-bottom: 30px;
+    }
+
+    .title-about {
+        margin-bottom: 50px;
     }
 }

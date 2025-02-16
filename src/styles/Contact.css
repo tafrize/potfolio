@@ -1,27 +1,133 @@
-.contact{
+.contact {
     padding-top: 4rem;
     background-color: rgb(244, 244, 244);
     padding-bottom: 2rem;
-    justify-content: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
 }
 
-.formulaire{
-    width: 90%; /* ou toute autre largeur qui te convient */
+.contact-title {
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: inherit;
+    word-wrap: break-word;
+}
+
+.contact-info .d-flex {
+    justify-content: center;
+    align-items: center;
+}
+
+.card-contact {
+    width: 100%;
+    max-width: 1450px;
+    margin: auto;
+    height: auto;
+}
+
+.formulaire {
+    width: 90%;
     max-width: 800px;
-    margin: auto;    
+    margin: auto;
     padding: 20px;
 }
 
 .form-control {
-    border-radius: 0 !important; /* Supprime les coins arrondis */
-    width: 100% !important; /* Rend l'input aussi large que son conteneur */
-    padding: 12px; /* Augmente l'espace intérieur pour plus de confort */
-    font-size: 1rem; /* Assure une bonne lisibilité */
+    border-radius: 0 !important;
+    width: 100% !important;
+    padding: 12px;
+    font-size: 1rem;
 }
 
-.submit{
-    width: 100%; 
+.submit {
+    width: 100%;
     border-radius: 0 !important;
     padding: 12px;
     font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .card-contact {
+        max-width: 100%;
+        padding: 10px;
+        height: auto !important;
+    }
+
+    .contact-info {
+        display: none; /* Masquer les coordonnées sur les petits écrans */
+    }
+
+    .formulaire {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .form-control {
+        font-size: 0.9rem; /* Réduction de la taille de la police sur petit écran */
+        padding: 10px;
+    }
+
+    .submit {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .contact-title {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .card-contact {
+        padding: 15px; /* Espacement entre la bordure et le contenu */
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-info {
+        display: none; /* Masquer les coordonnées sur les écrans <= 576px */
+    }
+
+    .formulaire {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .form-control {
+        font-size: 0.85rem;
+    }
+
+    .submit {
+        font-size: 0.85rem;
+    }
+
+    .contact-info a {
+        font-size: 0.85rem;
+    }
+
+    .contact-info .d-flex {
+        justify-content: center;
+    }
+
+    .contact-info .d-flex a {
+        font-size: 0.85rem; /* Taille de police encore plus petite pour les très petits écrans */
+    }
+
+    .contact-info .d-flex svg {
+        margin-right: 6px; /* Espacement réduit encore pour les petites icônes */
+    }
 }
